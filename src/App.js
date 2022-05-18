@@ -1,11 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import {AddTransaction} from './components/AddTransaction'
+import { GlobalProvider } from './context/GlobalState';
 
 function App() {
   return (
-    <div className="App">
+    <GlobalProvider>
+      
+        <AddTransaction/>
 
-    </div>
+    </GlobalProvider>
   );
 }
 
